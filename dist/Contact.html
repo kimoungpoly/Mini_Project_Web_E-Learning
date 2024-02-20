@@ -23,7 +23,7 @@
 	<!-- header  -->
 	<header >
         <nav class="flex text-base items-center justify-around bg-gray-100 p-4 sticky top-0 z-10 lg:fixed lg:w-full">
-            <div class="w-32">
+            <div class="w-44">
                 <img src="/images/logo.png" class="object-cover" alt="logo">
             </div>
             
@@ -37,16 +37,21 @@
 				<i class="fas fa-times text-pink-500 text-lg"></i>
 			</div>
 			<!-- menu scree tablet to desktop -->
-            <ul class="hidden lg:flex space-x-10 lg:space-x-4 font-medium font-roboto">
-                <li><a href="/dist/HomePage.html" class="text-pink-500 px-3 py-1 hover:text-pink-500">Home</a></li>
-                <li><a href="/dist/Portfolio.html" class="text-gray-800 px-3 py-1 hover:text-pink-500">Portfolio</a></li>
-                <li><a href="/dist/Contact.html" class="text-gray-800 px-3 py-1 hover:text-pink-500">Contact</a></li>
-            </ul>
+			<ul class="hidden lg:flex space-x-10 lg:space-x-4 font-medium font-roboto">
+				<li><a href="/dist/HomePage.html" class="menu-item text-gray-800 px-3 py-1 hover:text-pink-500">Home</a></li>
+				<li><a href="/dist/Portfolio.html" class="menu-item text-gray-800 px-3 py-1 hover:text-pink-500">Portfolio</a></li>
+				<li><a href="/dist/Contact.html" class="menu-item text-gray-800 px-3 py-1 hover:text-pink-500">Contact</a></li>
+			</ul>
+			
 		
             <div class="hidden lg:flex items-center">
                 <input type="text" class="search w-48 bg-gray-200 text-gray-800 px-3 py-1 rounded-3xl focus:outline-none " placeholder="Search here...">
                 <i class="fas fa-search text-pink-500 ml-40 absolute"></i>
-            </div>           
+            </div>       
+
+			<div class="max-lg:hidden flex items-center">
+				<a href="/dist/login.html" class="font-medium font-roboto  px-4 py-1 border-2 border-pink-600 rounded-full text-white bg-pink-600 transition duration-500 hover:text-pink-600 hover:bg-white">Get Started</a>
+			</div>   
         </nav>
 		
 		<!-- menu for screen mobile -->
@@ -54,7 +59,7 @@
 			<nav class=" absolute z-10 grid grid-cols-2 items-center drop-shadow-xl justify-around bg-gray-100 bg-opacity-95 p-4 w-full py-2 px-3 font-medium text-gray-900 border-b">
 				<ul class="py-5 px-10 space-y-4 font-medium font-roboto w-auto h-full flex flex-col justify-center">
 					<li>
-						<a href="/dist/HomePage.html" class="text-pink-500 hover:text-pink-500 dark:hover:text-white">
+						<a href="/dist/HomePage.html" class=" hover:text-pink-500 dark:hover:text-white">
 							Home
 						</a>
 					</li>
@@ -94,40 +99,31 @@
             <div class="text-center mt-12 md:mt-36">
                 <h2 class="text-4xl font-poppins font-semibold">Contact US</h2>
             </div>
-            <div class="flex justify-center items-center px-1 md:px-1 py-8 md:py-14 " data-aos="zoom-in-up" >
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 rounded-lg shadow-inner md:shadow-2xl shadow-gray-200 bg-gray-100 overflow-hidden">
-                    <!-- Left Content: Form -->
-                    <div class="p-16 sm:p-8 lg:p-10 ">
+            <div class="flex justify-center items-center  py-8 md:py-14 " data-aos="zoom-in-up" >
+                <div class="w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2 bg-slate-50 grid grid-cols-1 rounded-lg  md:shadow-xl  overflow-hidden">
+
+                    <div class=" p-5  md:p-16 ">
                         <h2 class="text-xl md:text-2xl font-poppins font-light text-pink-500 mb-2 pb-5">Get in Touch</h2>
                         <form action="#" method="POST">
-                            <div class="mb-4 ">
+                            <div class="mb-8 ">
                                 <label for="name" class="block text-gray-700 font-medium font-roboto">Name:</label>
-                                <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full mt-1 px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-pink-500" required>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full mt-1 px-2 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-pink-500" required>
                             </div>
         
-                            <div class="mb-4">
+                            <div class="mb-8">
                                 <label for="email" class="block text-gray-700 font-medium font-roboto">Email:</label>
-                                <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full mt-1  px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-pink-500" required>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full mt-1  px-2 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-pink-500" required>
                             </div>
         
-                            <div class="mb-4">
+                            <div class="mb-8">
                                 <label for="message" class="block text-gray-700 font-medium font-roboto">Message:</label>
-                                <textarea id="message" name="message" rows="4" placeholder="Enter your message" class="w-full  mt-1  px-6 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-pink-500" required></textarea>
+                                <textarea id="message" name="message" rows="4" placeholder="Enter your message" class="w-full  mt-1  px-2 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-pink-500" required></textarea>
                             </div>
-        
+							
                             <div class="text-center">
-                                <button type="submit" class="bg-pink-500 text-white px-12  lg:px-24 py-2 rounded-md hover:bg-pink-600 focus:outline-none focus:bg-pink-600">Submit</button>
+                                <button type="submit" class="bg-pink-500 text-white w-full py-2 rounded-md hover:bg-pink-600 focus:outline-none focus:bg-pink-600">Submit</button>
                             </div>
                         </form>
-                    </div>
-                    <!-- Right Content: Contact Info -->
-                    <div class="p-16 sm:p-8 lg:p-10 flex flex-col justify-center items-center">
-                        <img src="/images/extra/Contact us.png" alt="Contact Us Image" class="w-48 h-48 md:w-56 md:h-56 mb-4">
-                        <div class="text-lg md:text-xl font-openSans">
-                            <p class="pb-2"><i class="fas fa-map-marker-alt pr-2 text-purple-500"></i>Phnom Penh, Cambodia</p>
-                            <p class="pb-2 "><i class="fas fa-phone-alt pr-2 text-purple-500"></i>+855 87 52 48 05</p>
-                            <p class="pb-2"><i class="fas fa-envelope pr-2 text-purple-500"></i>poly168@gmail.com</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -135,7 +131,7 @@
         </section>       
     </main>
 	
-    <footer class="text-white bg-slate-800 py-10 lg:py-24">
+	<footer class="text-white bg-slate-800 py-10 lg:py-24">
 		<div class="container mx-auto px-4 lg:px-6 xl:px-8 flex flex-col lg:flex-row justify-between items-center">
 			<!-- Newsletter Section -->
 			<section class="text-center lg:text-left lg:w-1/2 mb-8 lg:mb-0 lg:order-2">
@@ -150,7 +146,7 @@
 			
 			<!-- Contact and Social Media Section -->
 			<section class="text-center lg:text-left lg:w-1/2 lg:order-1">
-				<img src="/images/logo.png" alt="Company Logo" class="logo w-32 mx-auto lg:w-44 mb-4 lg:mb-5 lg:mx-0">
+				<img src="/images/logo.png" alt="Company Logo" class="logo w-36 mx-auto lg:w-44 mb-4 lg:mb-5 lg:mx-0">
 				<div class="social-links flex justify-center lg:justify-start mb-4">
 					<a href="#" target="_blank" rel="noopener noreferrer" class="social-link p-1 fab fa-facebook-square" aria-label="Facebook"></a>
 					<a href="#" target="_blank" rel="noopener noreferrer" class="social-link p-1 fab fa-instagram" aria-label="Instagram"></a>
@@ -168,7 +164,7 @@
 				</div>
 			</section>
 		</div>
-	</footer>	  
+	</footer>  
 
 <script src="/script.js"></script>
 

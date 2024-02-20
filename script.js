@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+
+
         // for login and register function
         const toggleToRegisterButton = document.getElementById('toggleToRegisterButton');
         const toggleToLoginButton = document.getElementById('toggleToLoginButton');
