@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- logo -->
+  <link rel="shortcut icon" href="/images/logo1.png" class="object-cover w-20">
+  <title>E-Learning</title>
+
+</head>
+<body>
+	<!-- header  -->
+	<header >
+        <nav class="flex text-base items-center justify-around bg-gray-100 p-4 sticky top-0 z-10 lg:fixed lg:w-full">
+            <div class="w-32">
+                <img src="/images/logo.png" class="object-cover" alt="logo">
+            </div>
+            
+			<!-- icon bars -->
+			<div class="block lg:hidden menu cursor-pointer items-center icon-bars" id="icon-bars">
+				<i class="fas fa-bars text-pink-500 text-lg"></i>
+			</div>
+
+			<!-- icon cencel -->
+			<div class="hidden lg:hidden menu cursor-pointer items-center icon-times" id="icon-times">
+				<i class="fas fa-times text-pink-500 text-lg"></i>
+			</div>
+			<!-- menu scree tablet to desktop -->
+            <ul class="hidden lg:flex space-x-10 lg:space-x-4 font-medium font-roboto">
+                <li><a href="/dist/HomePage.html" class="text-pink-500 px-3 py-1 hover:text-pink-500">Home</a></li>
+                <li><a href="/dist/Portfolio.html" class="text-gray-800 px-3 py-1 hover:text-pink-500">Portfolio</a></li>
+                <li><a href="/dist/Contact.html" class="text-gray-800 px-3 py-1 hover:text-pink-500">Contact</a></li>
+            </ul>
+		
+            <div class="hidden lg:flex items-center">
+                <input type="text" class="search w-48 bg-gray-200 text-gray-800 px-3 py-1 rounded-3xl focus:outline-none " placeholder="Search here...">
+                <i class="fas fa-search text-pink-500 ml-40 absolute"></i>
+            </div>           
+        </nav>
+		
+		<!-- menu for screen mobile -->
+		<div class="hidden mobile-menu lg:hidden" id="mobile-menu">
+			<nav class=" absolute z-10 grid grid-cols-2 items-center drop-shadow-xl justify-around bg-gray-100 bg-opacity-95 p-4 w-full py-2 px-3 font-medium text-gray-900 border-b">
+				<ul class="py-5 px-10 space-y-4 font-medium font-roboto w-auto h-full flex flex-col justify-center">
+					<li>
+						<a href="/dist/HomePage.html" class="text-pink-500 hover:text-pink-500 dark:hover:text-white">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="/dist/Portfolio.html" class="hover:text-pink-500 dark:hover:text-white">
+							Portfolio
+						</a>
+					</li>
+					<li>
+						<a href="/dist/Contact.html" class="hover:text-pink-500 dark:hover:text-white">
+							Contact
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+    </header>
+
+	<main>
+
+		<section data-aos="zoom-in-up" class="bg-white mt-8 lg:mt-36 flex flex-col lg:flex-row justify-between items-center py-8 px-4 md:px-12 lg:px-24">
+			<!-- Slide Text -->
+			<div class="lg:w-1/2 mb-8 lg:mb-0"> 
+				<h1 class="text-2xl lg:text-4xl font-semibold leading-normal text-gray-800">The beautiful thing about learning is that nobody can take it away from you</h1>
+				<h5 class="text-base lg:text-xl mt-4 lg:mt-5 font-normal text-gray-600">Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research!</h5>
+				<div class="mt-4 lg:mt-2 flex items-center">
+					<a href="/dist/login.html" class="font-medium font-roboto mt-3 px-5 py-2 border-2 border-pink-600 rounded-full text-white bg-pink-600 transition duration-500 hover:text-pink-600 hover:bg-white">Get Started</a>
+				</div>
+			</div>
+			
+			<!-- Slide Image -->
+			<div class="lg:w-1/2 lg:pl-8">
+				<img class="object-cover w-full h-96" src="/images/extra/slide.png" alt="svg">
+			</div>
+		</section>
+		<!-- Popular Subjects  -->
+		<section >
+			<div class=" text-center mb-10 mt-36">
+				<h2 class="text-2xl font-medium capitalize font-poppins">Popular Subjects on E-learning</h2>
+			</div>
+		
+			<div class="flex flex-col items-center mb-10"  data-aos="zoom-in-up">
+				<div class=" flex flex-wrap justify-center my-6">
+					<!-- card 1  -->
+					<div class=" mx-4 my-2">
+						<a href="" class="flex items-center justify-center w-64 h-24 font-medium font-roboto bg-white  rounded cursor-pointer shadow-md shadow-slate-200 hover:shadow-2xl hover:shadow-gray-300">
+							<img src="/images/icon/JEEPreparation.png" alt="JEE Preparation images" class="w-20 mr-4">
+							JEE Preparation
+						</a>
+					</div>
+					<!-- card 2  -->
+					<div class=" mx-4 my-2">
+						<a href="" class="flex items-center justify-center w-64 h-24 font-medium font-roboto bg-white  rounded cursor-pointer shadow-md shadow-slate-200 hover:shadow-2xl hover:shadow-gray-300">
+							<img src="/images/icon/GATE Preparation.png" alt="JEE Preparation images" class="w-20 mr-4">
+							GATE Preparation
+						</a>
+					</div>
+					<div class=" mx-4 my-2">
+						<a href="" class="flex items-center justify-center w-64 h-24 font-medium font-roboto bg-white  rounded cursor-pointer shadow-md shadow-slate-200 hover:shadow-2xl hover:shadow-gray-300">
+							<img src="/images/icon/Sample Papers.png" alt="JEE Preparation images" class="w-20 mr-4">
+							Sample Papers
+						</a>
+					</div>
+					<div class=" mx-4 my-2">
+						<a href="" class="flex items-center justify-center w-64 h-24 font-medium font-roboto bg-white  rounded cursor-pointer shadow-md shadow-slate-200 hover:shadow-2xl hover:shadow-gray-300">
+							<img src="/images/icon/Daily Quiz.png" alt="JEE Preparation images" class="w-20 mr-4">
+							Daily Quiz
+						</a>
+					</div>
+				</div>
+				<div class="flex flex-wrap justify-center my-6" >
+					<div class="det mx-4 my-2">
+						<a href="" class="flex items-center justify-center w-64 h-24 font-medium font-roboto bg-white  rounded cursor-pointer shadow-md shadow-slate-200 hover:shadow-2xl hover:shadow-gray-300">
+							<img src="/images/icon/Computer Courses.png" alt="JEE Preparation images" class="w-20 mr-4">
+							Computer Courses
+						</a>
+					</div>
+					<div class="det mx-4 my-2">
+						<a href="" class="flex items-center justify-center w-64 h-24 font-medium font-roboto bg-white  rounded cursor-pointer shadow-md shadow-slate-200 hover:shadow-2xl hover:shadow-gray-300">
+							<img src="/images/icon/Data Structures.png" alt="JEE Preparation images" class="w-20 mr-4">
+							Data Structures
+						</a>
+					</div>
+					<div class="det mx-4 my-2">
+						<a href="" class="flex items-center justify-center w-64 h-24 font-medium font-roboto bg-white  rounded cursor-pointer shadow-md shadow-slate-200 hover:shadow-2xl hover:shadow-gray-300">
+							<img src="/images/icon/Algorithm.png" alt="JEE Preparation images" class="w-20 mr-4">
+							Algorithm
+						</a>
+					</div>
+					<div class="det mx-4 my-2">
+						<a href="" class="flex items-center justify-center w-64 h-24 font-medium font-roboto bg-white  rounded cursor-pointer shadow-md shadow-slate-200 hover:shadow-2xl hover:shadow-gray-300">
+							<img src="/images/icon/Projects.png" alt="JEE Preparation images" class="w-20 mr-4">
+							Projects
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About Section -->
+		<section class="px-4 lg:px-0 "> <!-- Adjust padding for smaller screens -->
+			<div class="text-gray-800 relative mb-20">
+				<center>
+					<h2 class="text-4xl font-poppins font-semibold py-16">About</h2>
+				</center>
+				<div class="flex flex-col lg:flex-row lg:space-x-4 lg:px-8 " data-aos="zoom-in-up" > <!-- Use space-x for spacing between elements -->
+					<!-- Image of about content -->
+					<div class="w-full lg:w-1/2 mb-6 lg:mb-0 xl:ml-24 ">
+						<img class="object-cover w-full h-auto lg:w-96" src="/images/extra/about.png" alt="Side Image"> <!-- Adjust image width for smaller screens -->
+					</div>
+					<!-- text of page about content  -->
+					<div class="w-full lg:w-1/2 px-2"> <!-- Adjust padding for smaller screens -->
+						<div class="w-full py-8 px-6 lg:px-12 text-left">
+							<h2 class="text-2xl font-medium capitalize font-poppins mb-4">What do you think about us?</h2>
+							<p class="mb-4 text-xl mt-5 font-openSans font-normal">Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion, and directed research. Educational websites can include resources such as games, videos, or topic-related tools that enhance learning and supplement classroom teaching. These websites make learning entertaining and attractive to students, especially in today's age. By using HTML, CSS, and JavaScript, we can make learning easier and more interesting.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</main>
+	<footer class="text-white bg-slate-800 py-10 lg:py-24">
+		<div class="container mx-auto px-4 lg:px-6 xl:px-8 flex flex-col lg:flex-row justify-between items-center">
+			<!-- Newsletter Section -->
+			<section class="text-center lg:text-left lg:w-1/2 mb-8 lg:mb-0 lg:order-2">
+				<h2 class="text-3xl lg:text-4xl font-semibold mb-4 lg:mb-6">Subscribe to Our Newsletter</h2>
+				<hr class="border-b-2 bg-gradient-to-r from-red-600 to-purple-600 mb-4 lg:mb-6">
+				<p class="text-lg lg:text-xl font-openSans mb-4 lg:mb-6">Stay updated with our latest news and updates. Enter your email to subscribe.</p>
+				<form class="flex flex-col lg:flex-row items-center" action="#" method="post">
+					<input class="newsletter-input px-8 lg:px-16 py-3 lg:py-4 m-1 bg-gradient-to-r text-gray-300 font-semibold rounded-md outline-none focus:outline-none border-none cursor-pointer transition-opacity duration-300 " type="email" name="email" placeholder="Enter Your Email">
+					<button class="newsletter-btn px-6 lg:px-8 py-3 lg:py-4 m-1 bg-gradient-to-r from-red-600 to-purple-600 text-white font-semibold rounded-md outline-none focus:outline-none border-none cursor-pointer transition-opacity duration-300 hover:opacity-70" type="submit">Subscribe</button>
+				</form>
+			</section>
+			
+			<!-- Contact and Social Media Section -->
+			<section class="text-center lg:text-left lg:w-1/2 lg:order-1">
+				<img src="/images/logo.png" alt="Company Logo" class="logo w-32 mx-auto lg:w-44 mb-4 lg:mb-5 lg:mx-0">
+				<div class="social-links flex justify-center lg:justify-start mb-4">
+					<a href="#" target="_blank" rel="noopener noreferrer" class="social-link p-1 fab fa-facebook-square" aria-label="Facebook"></a>
+					<a href="#" target="_blank" rel="noopener noreferrer" class="social-link p-1 fab fa-instagram" aria-label="Instagram"></a>
+					<a href="#" target="_blank" rel="noopener noreferrer" class="social-link p-1 fab fa-twitter" aria-label="Twitter"></a>
+					<a href="#" target="_blank" rel="noopener noreferrer" class="social-link p-1 fab fa-youtube" aria-label="YouTube"></a>
+					<a href="#" target="_blank" rel="noopener noreferrer" class="social-link p-1 fab fa-linkedin" aria-label="LinkedIn"></a>
+				</div>
+				<div class="contact-info text-sm">
+					<p>© 2024 Company Name. All Rights Reserved.</p>
+					<address>
+						<p><i class="fas fa-map-marker-alt pr-2"></i>Northbridge Road, Sangkat Toek Thla, Khan Sen Sok, Phnom Penh, Cambodia</p>
+						<p><i class="fas fa-phone-alt pr-2"></i>+855 87 52 48 05</p>
+					</address>
+					<p><i class="fas fa-envelope pr-2"></i><a href="mailto:poly168@gmail.com">poly168@gmail.com</a></p>
+				</div>
+			</section>
+		</div>
+	</footer>	
+	<script src="/script.js"></script>
+
+	<!-- Include AOS Library -->
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<!-- Initialize AOS -->
+	<script>
+	AOS.init();
+	</script>
+</body>
+</html>

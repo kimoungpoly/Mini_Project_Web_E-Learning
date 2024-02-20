@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .background-image {
+        background-image: url('/images/extra/b1.jpg');
+        height: 60vh;
+        position: relative; /* Ensure the container is positioned */
+    }
+
+    /* Create a pseudo-element to act as the overlay */
+    .background-image::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        transition: background-color 0.3s ease; 
+    }
+
+    /* Apply hover effect to the overlay */
+    .background-image:hover::after {
+        background-color: rgba(255, 123, 123, 0.078); 
+    }
+}
